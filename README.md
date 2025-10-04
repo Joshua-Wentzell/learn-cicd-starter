@@ -1,4 +1,4 @@
-![badge showing code coverage percentage] (https://github.com/Joshua-Wentzell/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
+![badge showing code coverage percentage](https://github.com/Joshua-Wentzell/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
 
 # learn-cicd-starter (Notely)
 
