@@ -21,7 +21,7 @@ jobs:
               run: ./scripts/buildprod.sh
 
             - name: Setup GCloud
-              uses: actions/setup-gcloud
+              uses: actions/setup-gcloud@v3
 
             - name: Build Docker and Push to GAR
               run: gcloud builds submit --tag us-central1-docker.pkg.dev/lexical-task-474113-i5/notely-ar-repo/wentzelljoshua/notely:latest .
