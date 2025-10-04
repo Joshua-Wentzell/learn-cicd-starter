@@ -28,8 +28,8 @@ jobs:
             - name: 'Set up Cloud SDK'
               uses: 'google-github-actions/setup-gcloud@v3'
 
-            - name: 'Use gcloud CLI'
-              run: 'gcloud info'
-
             - name: Build Docker and Push to GAR
               run: gcloud builds submit --tag us-central1-docker.pkg.dev/lexical-task-474113-i5/notely-ar-repo/wentzelljoshua/notely:latest .
+
+            - name: Deploy to Cloud Run
+              run: gcloud run deploy notely --image us-central1-docker.pkg.dev/lexical-task-474113-i5/notely-ar-repo/wentzelljoshua/notely:latest --region us-central1 --allow-unauthenticated --project lexical-task-474113-i5 --max-instances=4
